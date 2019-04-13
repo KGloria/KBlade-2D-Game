@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\SceneLoader.cs" />
+    <Compile Include="Assets\Scripts\StatsController.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Proj/cs583s19_2d_game_gloria_k_tblade/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
