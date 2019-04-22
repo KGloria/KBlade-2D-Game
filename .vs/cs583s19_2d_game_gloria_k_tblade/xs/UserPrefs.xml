@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{B0DD849F-9DF1-2C11-2CAD-643AF9F99CB5}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/StatsController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/HealthBar.cs">
     <Files>
       <File FileName="Assets/Scripts/SceneLoader.cs" Line="6" Column="11" />
-      <File FileName="Assets/Scripts/StatsController.cs" Line="64" Column="5" />
+      <File FileName="Assets/Scripts/StatsController.cs" Line="40" Column="28" />
+      <File FileName="Assets/Scripts/MovingObj.cs" Line="23" Column="66" />
+      <File FileName="Assets/Scripts/HealthBar.cs" Line="8" Column="48" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

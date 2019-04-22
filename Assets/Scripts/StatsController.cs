@@ -15,6 +15,8 @@ public class StatsController : MonoBehaviour
 
     private int HitPoints = 100;
     private int BossHP;
+    public float enemyHealth;
+
     // Start is called before the first frame update
     void newGame()
     {
@@ -32,15 +34,28 @@ public class StatsController : MonoBehaviour
         BossHP = num;
     }
 
+    public void dealDmg()
+    {
+        int dmg = calcDMG();
+        enemyHealth -= dmg;
+        if (enemyHealth <= 0)
+            Die();
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if(HitPoints == 0)
+        if(HitPoints <= 0)
         {
             //insert game over screen
         }
 
-        if(BossHP == 0)
+        if(BossHP <= 0)
         {
             //fetch next scene
         }
@@ -62,8 +77,9 @@ public class StatsController : MonoBehaviour
         else if (Stattype == 4) Special += 1;
     }
 
-    public void calcDMG()
+    int calcDMG()
     {
-
+        Random random = new Random();
+        return (int)random.Next(0 + Str, 3 + Atk);
     }
 }
