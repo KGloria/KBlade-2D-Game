@@ -18,16 +18,7 @@ public abstract class MovingObj : MonoBehaviour {
         inverseMoveTime = 1f / moveTime;
     }
 
-    protected IEnumerator SmoothMovement (Vector3 end)
-    {
-        float sqrRemainingDistance = (transform.position - end). 
-    }
-
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()

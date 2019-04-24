@@ -34,9 +34,8 @@ public class StatsController : MonoBehaviour
         BossHP = num;
     }
 
-    public void dealDmg()
+    public void dealDmg(float dmg)
     {
-        int dmg = calcDMG();
         enemyHealth -= dmg;
         if (enemyHealth <= 0)
             Die();
@@ -75,11 +74,5 @@ public class StatsController : MonoBehaviour
         else if (Stattype == 2) Def += 1;
         else if (Stattype == 3) Str += 1;
         else if (Stattype == 4) Special += 1;
-    }
-
-    int calcDMG()
-    {
-        Random random = new Random();
-        return (int)random.Next(0 + Str, 3 + Atk);
     }
 }
