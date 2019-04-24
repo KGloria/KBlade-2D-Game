@@ -1,25 +1,34 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
     public GameObject Boss;
     public Vector3 spawnValues;
     public GameObject hazard;
+    [SerializeField] Text scoreText;
+    public int _score;
+    private float count;
+    private float div;
+    private bool nexWave;
 
-    private int score = 0;
     private float health;
     private bool gameover;
 
     private void Awake()
     {
         gameover = false;
-        health = 100;
     }
 
     private void Start()
     {
+        _score = 0;
+        count = 0;
+        div = 1;
+        nexWave = false;
+        scoreText.text = "TimeScore = 0";
         InvokeRepeating("spawnEnemies", 3.0f, Random.Range(5.0f, 7.0f));
         InvokeRepeating("spawnBoss", 16.0f, Random.Range(25.0f, 30.0f));
     }
@@ -30,6 +39,19 @@ public class GameController : MonoBehaviour
         {
             gameover = true;
         }
+        if (50 < _score && nexWave == false)
+        {
+            InvokeRepeating("spawnEnemies", 3.0f, Random.Range(1.5f, 3.0f));
+            nexWave = true;
+        }
+        count += 1;
+        if (count >= div)
+        {
+            _score += (int) (count / div);
+            count = 0;
+            div += 2;
+        }
+        scoreText.text = "TimeScore = " + _score;
     }
 
     void spawnEnemies()

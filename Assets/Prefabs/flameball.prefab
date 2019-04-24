@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 2685437239905976170}
   - component: {fileID: 2685437239905976171}
   - component: {fileID: 2685437239905976172}
-  - component: {fileID: 2685437239905976173}
   - component: {fileID: 152052488378471005}
+  - component: {fileID: 43414215491903962}
+  - component: {fileID: 8761427784655317638}
   m_Layer: 0
   m_Name: flameball
   m_TagString: fireball
@@ -101,7 +102,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!50 &2685437239905976173
+--- !u!58 &152052488378471005
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2685437239905976174}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.002589317, y: -0.019440763}
+  serializedVersion: 2
+  m_Radius: 0.10468675
+--- !u!50 &43414215491903962
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -122,19 +139,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &152052488378471005
-CircleCollider2D:
+--- !u!256 &8761427784655317638
+FrictionJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2685437239905976174}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.002589317, y: -0.019440763}
-  serializedVersion: 2
-  m_Radius: 0.10468675
+  m_Enabled: 0
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0.2665, y: 0.2098}
+  m_MaxForce: 1
+  m_MaxTorque: 1

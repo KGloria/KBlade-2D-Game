@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -32,7 +33,7 @@ public class PlayerHealth : MonoBehaviour
         }
         if (collision.gameObject.tag == "tentacle")
         {
-            DealDamage(7);
+            DealDamage(8);
             Destroy(collision.gameObject);
         }
     }
@@ -56,5 +57,6 @@ public class PlayerHealth : MonoBehaviour
     {
         CurrentHealth = 0;
         Debug.Log("Player has Died.");
+        SceneManager.LoadScene(6);
     }
 }

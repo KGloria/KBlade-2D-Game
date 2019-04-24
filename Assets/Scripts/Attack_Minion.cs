@@ -7,7 +7,7 @@ public class Attack_Minion : MonoBehaviour
     public GameObject fireball;
     public Transform fireballSpawn;
     public Rigidbody2D player;
-    public float fireballSpeed = 0.0f;
+    public float fireballSpeed;
 
     private void Start()
     {
