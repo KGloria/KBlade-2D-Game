@@ -4,26 +4,26 @@ using UnityEngine;
 
 public class Attack_Minion : MonoBehaviour
 {
-    public Rigidbody2D fireball;
-    public Rigidbody player;
-    public float fireballSpeed = 8f;
+    public GameObject fireball;
+    public Transform fireballSpawn;
+    public Rigidbody2D player;
+    public float fireballSpeed = 0.0f;
+
+    private void Start()
+    {
+        Invoke("ShootFireBall", Random.Range(0.0f, 8.0f));
+        InvokeRepeating("ShootFireBall", Random.Range(0.0f, 15.0f), Random.Range(4.0f, 10.0f));
+    }
 
     private void Update()
     {
-        instFireball();
-
     }
 
-    private void instFireball()
+    public void ShootFireBall()
     {
-        var fireballInst = Instantiate(fireball, transform.position, Quaternion.Euler(new Vector2(0, 0)));
-        fireballInst.velocity = new Vector2(fireballSpeed, 0);
-    }
-
-
-    private void OnTriggerEnter2D(Rigidbody2D collision)
-    {
-        Destroy(collision.gameObject);
+        var acannonBall = Instantiate(fireball, fireballSpawn.transform.position, Quaternion.identity);
+        Rigidbody2D fireBallRigidBody = acannonBall.GetComponent<Rigidbody2D>();
+        fireBallRigidBody.velocity = Quaternion.Euler(0, 0, 90) * Vector3.right * fireballSpeed;
     }
 
 }

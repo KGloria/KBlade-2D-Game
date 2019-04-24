@@ -12,7 +12,7 @@ public class Splash : MonoBehaviour {
 
     IEnumerator SleepTimer()
     {
-        yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(4);
         SceneManager.LoadScene(1);
     }
 
