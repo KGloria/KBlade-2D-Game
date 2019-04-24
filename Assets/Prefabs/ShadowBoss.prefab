@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1191525506024336460}
   - component: {fileID: 1191525506024336451}
   - component: {fileID: 3910277079466825306}
+  - component: {fileID: 8756809120415794156}
   m_Layer: 0
   m_Name: ShadowBoss
   m_TagString: Enemy
@@ -118,6 +119,20 @@ MonoBehaviour:
   fireballSpawn: {fileID: 9166099545610700098}
   player: {fileID: 0}
   fireballSpeed: 1
+--- !u!114 &8756809120415794156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191525506024336450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a5d895099d05447fac566b8f4979833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 145.7
+  sprite: {fileID: 1191525506024336450}
 --- !u!1 &7990246982593826245
 GameObject:
   m_ObjectHideFlags: 0

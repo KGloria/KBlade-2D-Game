@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    public GameObject hazard;
     public GameObject Boss;
     public Vector3 spawnValues;
-    private float monsterHeath;
+    public GameObject hazard;
 
     private int score = 0;
     private float health;
@@ -37,7 +36,7 @@ public class GameController : MonoBehaviour
     {
         Vector3 spawnPosition = new Vector3(Random.Range (-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
         Quaternion spawnRotation = new Quaternion();
-        GameObject clone = Instantiate(hazard, spawnPosition, spawnRotation);
+        Instantiate(hazard, spawnPosition, spawnRotation);
     }
 
     void spawnBoss()
