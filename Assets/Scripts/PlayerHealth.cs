@@ -48,10 +48,7 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    float CalcHealth()
-    {
-         return CurrentHealth/ MaxHealth;
-    }
+    float CalcHealth() => CurrentHealth / MaxHealth;
 
     void Die()
     {

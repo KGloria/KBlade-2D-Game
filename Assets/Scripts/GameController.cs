@@ -36,17 +36,11 @@ public class GameController : MonoBehaviour
     {
         if (50 < _score && nexWave == false)
         {
-            InvokeRepeating("spawnEnemies", 3.0f, Random.Range(1.5f, 3.0f));
-            InvokeRepeating("spawnBoss", 6.0f, Random.Range(12.0f, 16.0f));
+            InvokeRepeating("spawnEnemies", 3.0f, Random.Range(1.0f, 2.5f));
+            InvokeRepeating("spawnBoss", 12.0f, Random.Range(6.0f, 12.0f));
             nexWave = true;
         }
 
-        if (80 < _score && nexWave == true)
-        {
-            InvokeRepeating("spawnEnemies", 2.0f, Random.Range(2.0 f, 3.0f));
-            InvokeRepeating("spawnBoss", 2.0f, Random.Range(4.0f, 7.0f));
-            nexWave = true;
-        }
         count += 1;
         if (count >= div)
         {

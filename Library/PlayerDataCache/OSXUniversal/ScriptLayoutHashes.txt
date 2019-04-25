@@ -1,6 +1,6 @@
 OSXUniversal
 PlayerPath?
-/Proj/cs583s19_2d_game_gloria_k_tblade/Releases/Tblade1222-dev-1.1.app
+/Proj/cs583s19_2d_game_gloria_k_tblade/Releases/Tblade1222-dev-1.2.app
 SceneListBegin?
 Assets/Scenes/SplashScreen.unity
 Assets/Scenes/MainScreen.unity

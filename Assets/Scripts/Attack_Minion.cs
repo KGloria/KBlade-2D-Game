@@ -27,7 +27,7 @@ public class Attack_Minion : MonoBehaviour
 
     public void ShootFireBall()
     {
-        var acannonBall = Instantiate(fireball, fireballSpawn.transform.position, Quaternion.identity);
+        GameObject acannonBall = Instantiate(fireball, fireballSpawn.transform.position, Quaternion.identity);
         Rigidbody2D fireBallRigidBody = acannonBall.GetComponent<Rigidbody2D>();
         fireBallRigidBody.velocity = Quaternion.Euler(0, 0, 90) * Vector3.right * fireballSpeed;
         MyAudioSrc.Play();

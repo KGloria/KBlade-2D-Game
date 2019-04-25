@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{B0DD849F-9DF1-2C11-2CAD-643AF9F99CB5}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerHealth.cs">
     <Files>
       <File FileName="Assets/Scripts/SceneLoader.cs" Line="16" Column="26" />
       <File FileName="Assets/Scripts/StatsController.cs" Line="37" Column="31" />
@@ -8,8 +8,8 @@
       <File FileName="Assets/Scripts/GameController.cs" Line="51" Column="26" />
       <File FileName="Assets/Scripts/Attack_Minion.cs" Line="30" Column="26" />
       <File FileName="Assets/Scripts/Splash.cs" Line="9" Column="1" />
-      <File FileName="Assets/Scripts/PlayerHealth.cs" Line="57" Column="6" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="71" Column="2" />
+      <File FileName="Assets/Scripts/PlayerHealth.cs" Line="50" Column="1" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="9" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
