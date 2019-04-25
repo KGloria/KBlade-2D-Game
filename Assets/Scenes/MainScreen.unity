@@ -703,7 +703,7 @@ GameObject:
   - component: {fileID: 1511557129}
   - component: {fileID: 1511557128}
   m_Layer: 5
-  m_Name: Settings_button
+  m_Name: Quit_button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -750,7 +750,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.27058825, g: 0.2784314, b: 0.34901962, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -768,7 +768,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1511557129}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 50741647}
+        m_MethodName: doExitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1511557129
@@ -878,7 +889,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Settings
+  m_Text: Quit
 --- !u!222 &1839086209
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -947,7 +958,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.7647059, g: 0.77254903, b: 0.7921569, a: 1}
+    m_HighlightedColor: {r: 0.2716714, g: 0.2799627, b: 0.3490566, a: 1}
     m_PressedColor: {r: 0.99607843, g: 0.74509805, b: 0.68235296, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1076,7 +1087,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.7662869, g: 0.7742301, b: 0.7924528, a: 1}
+    m_HighlightedColor: {r: 0.27450982, g: 0.28235295, b: 0.3529412, a: 1}
     m_PressedColor: {r: 0.9960785, g: 0.74509805, b: 0.68235296, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1

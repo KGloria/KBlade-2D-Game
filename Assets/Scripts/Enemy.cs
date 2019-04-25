@@ -12,8 +12,7 @@ public class Enemy : MonoBehaviour
 
     private float latestDirChTime;
     private readonly float directinChangeTime = 3f;
-
-    public float characterVel = 2f;
+    private float characterVel = 2f;
     private Vector2 movementDirection;
     private Vector2 movementPerSecond;
 

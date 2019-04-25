@@ -1,6 +1,6 @@
 OSXUniversal
 PlayerPath?
-/Proj/cs583s19_2d_game_gloria_k_tblade/Releases/Tblade1222-dev-0.9.app
+/Proj/cs583s19_2d_game_gloria_k_tblade/Releases/Tblade1222-dev-1.1.app
 SceneListBegin?
 Assets/Scenes/SplashScreen.unity
 Assets/Scenes/MainScreen.unity
@@ -11,7 +11,7 @@ Assets/Scenes/Lvl1_1.unity
 Assets/Scenes/GameOver.unity
 SceneListEnd?
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
-f01e4f3155d82fef5e57245c259ad331 Assembly-CSharp.dll:.Enemy
+1192ed66ddb86b5245085e423a2e7f1e Assembly-CSharp.dll:.Enemy
 01aa15e337e3a9c62f15153dfac6d589 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.SceneLoader
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -125,9 +125,9 @@ a2cc7669a49ade53626c07a53b6e119c Assembly-CSharp.dll:.StatsController
 303ad70ce203ad874efe2965d0fbcff9 Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsEventTracker
 7fb9de8dcf73854b6b328eca1f7a6e6d Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsTracker
 94017dcc9f00fe671ea7dc427b4da011 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
-8ee8abe366c2f9e26676334d008c3490 Assembly-CSharp.dll:.Attack_Minion
+2ce8ec3271c60b5357e790a8c2035aa0 Assembly-CSharp.dll:.Attack_Minion
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
-42851666a04e5e4bdda8c893d3fff53b Assembly-CSharp.dll:.GameController
+e0b1b12dbb1cc91c722b6f42b0ca59e4 Assembly-CSharp.dll:.GameController
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.HealthBar
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
