@@ -1,15 +1,13 @@
 ﻿<Properties StartupConfiguration="{B0DD849F-9DF1-2C11-2CAD-643AF9F99CB5}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerHealth.cs">
     <Files>
-      <File FileName="Assets/Scripts/SceneLoader.cs" Line="16" Column="26" />
+      <File FileName="Assets/Scripts/SceneLoader.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/StatsController.cs" Line="37" Column="31" />
-      <File FileName="Assets/Scripts/MovingObj.cs" Line="19" Column="6" />
+      <File FileName="Assets/Scripts/MovingObj.cs" Line="14" Column="5" />
       <File FileName="Assets/Scripts/HealthBar.cs" Line="19" Column="2" />
-      <File FileName="Assets/Scripts/GameController.cs" Line="51" Column="26" />
-      <File FileName="Assets/Scripts/Attack_Minion.cs" Line="30" Column="26" />
-      <File FileName="Assets/Scripts/Splash.cs" Line="9" Column="1" />
-      <File FileName="Assets/Scripts/PlayerHealth.cs" Line="50" Column="1" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="9" Column="26" />
+      <File FileName="Assets/Scripts/Splash.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerHealth.cs" Line="27" Column="1" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="59" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
